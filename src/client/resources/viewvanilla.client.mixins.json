@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "viw.xs.viewvanilla.client.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "GameRendererMixin",
+    "WorldRendererMixin",
+    "KeyboardMixin",
+    "HitColorMixin",
+    "DistanceHitMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

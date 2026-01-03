@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "viewvanilla",
+  "version": "1.21.11",
+  "name": "ViewVanilla",
+  "description": "for pvp",
+  "authors": ["Horuslower"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/viewvanilla/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "viw.xs.viewvanilla.client.ViewvanillaDataGenerator"
+    ],
+    "client": [
+      "viw.xs.viewvanilla.client.ViewVanillaClient"
+    ],
+    "main": [
+      "ru.vidtu.ksyxis.viewvanilla.Viewvanilla"
+    ]
+  },
+  "mixins": [
+    "viewvanilla.mixins.json",
+    {
+      "config": "viewvanilla.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": "0.18.4",
+    "fabric-api": "*",
+    "minecraft": "1.21.8"
+  }
+}
